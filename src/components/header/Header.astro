@@ -1,15 +1,13 @@
 ---
+import ThemeIcon from "@components/ThemeIcon.astro";
 import NavMenu from "./NavMenu.astro";
 import menuData from "./menuData.json"
 ---
 
-<header class="header flex items-center justify-between w-full py-4 px-20">
-    <p class="header-logo font-bold text-xl">Saul Lara</p>
+<header class="header flex items-center justify-between w-full py-4 px-20 bg-gray-50 dark:bg-gray-600">
+    <p class="header-logo font-bold text-xl text-gray-900 dark:text-gray-50">Saul Hernandez Lara</p>
     <div class="header-container flex gap-5 items-center">
         <NavMenu menuData={menuData}/>
-        <button id="theme-button" class="cursor-pointer group w-6 h-6">    
-            <iconify-icon class="group-hover:scale-[.9]" icon="ph:sun-duotone" width="24" height="24"></iconify-icon>
-        </button>
-        <!-- iconamoon:mode-dark-duotone -->
+        <ThemeIcon/>
     </div>
 </header>
