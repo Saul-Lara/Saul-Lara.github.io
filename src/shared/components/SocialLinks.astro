@@ -1,0 +1,15 @@
+---
+import socialLinksData from "@shared/data/socialLinksData.json";
+---
+
+<div class="social-icons flex items-center gap-4">
+    {
+        socialLinksData.map(({label, icon, link}) => (
+            <a href={link}>   
+                <span>
+                    <iconify-icon icon={icon} width="32" height="32"></iconify-icon>
+                </span>
+            </a>
+        ))
+    }
+</div>

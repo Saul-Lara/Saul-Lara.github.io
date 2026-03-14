@@ -1,0 +1,32 @@
+---
+interface Props{
+    name: string;
+    description: string;
+    location: string;
+    availability: boolean;
+}
+
+const {name, description, location, availability } = Astro.props;
+---
+
+<article class="flex flex-col gap-4 text-gray-900 dark:text-gray-50">
+    <div class="flex flex-col gap-5">
+        <h1 class="text-6xl font-bold">Hello, I'm {name}</h1>
+        <p>{description}</p>
+    </div>
+    
+    <div class="flex flex-col gap-2 py-2">
+        <span class="flex items-center gap-2 w-3 h-3">
+            <iconify-icon icon="mi:location"></iconify-icon> {location}
+        </span>
+        
+        <span class="flex items-center gap-2 before:content-[''] before:w-3 before:h-3 
+        before:bg-green-500 before:rounded-full">
+        {
+            availability ? "Available for new projects" : "Currently working" 
+        }
+        </span>
+    </div>
+    
+    <slot />
+</article>
