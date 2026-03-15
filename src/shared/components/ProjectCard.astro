@@ -1,0 +1,39 @@
+---
+import projectsData from "@shared/data/projectsData.json";
+---
+
+{
+    projectsData.map(({ thumbnail, projectName, projectDescription, tags, links }) => (
+    <article class="flex max-w-xl flex-col rounded-2xl items-start justify-between shadow-md dark:shadow-gray-500 overflow-hidden mb-3 bg-gray-50 dark:bg-gray-800">
+        <div class="h-48 w-full overflow-hidden">
+            <img class="w-full h-full object-cover object-center" src={thumbnail} alt={projectName}>
+        </div>
+
+        <div class="flex flex-col grow p-6">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-50">{projectName}</h3>
+            <p class="mt-2 line-clamp-3 text-sm text-gray-600 dark:text-gray-300">{projectDescription}</p>  
+            
+            <div class="flex flex-wrap gap-2 mt-4">
+                {
+                    tags.map((label) => (
+                        <span class="rounded-full px-3 py-1 text-xs bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300">{label}</span>
+                    ))
+                }
+            </div>
+            
+            <div class="mt-4 flex flex-wrap gap-2">
+                {
+                    links.map(({ label, icon, link }) => (
+                        <a class="inline-flex bg-gray-900 text-white dark:bg-gray-50 dark:text-gray-900 text-sm items-center font-medium py-1.5 px-4 rounded-xl" href={link}>
+                            <iconify-icon icon={icon} width="16" height="16" class="pr-1"></iconify-icon>
+                            <span>{label}</span>
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+    </article> 
+    ))
+}
+
+

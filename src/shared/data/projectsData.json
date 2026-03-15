@@ -1,0 +1,69 @@
+[
+    {
+        "thumbnail": "/images/projectImg/hashnodeCardsGenerator.jpg",
+        "projectName": "Hashnode Cards Generator",
+        "projectDescription" : "Automatically generate SVG cards from your latest Hashnode articles and update your README with them using a GitHub Action.",
+        "tags": ["JavaScript"],
+        "links": [
+            {
+                "label": "GitHub",
+                "icon": "lucide:github",
+                "link": "https://github.com/Saul-Lara/hashnode-cards"
+            }
+        ]
+    },
+    {
+        "thumbnail": "/images/projectImg/httpServerCSharp.jpg",
+        "projectName": "HTTP Server (C#)",
+        "projectDescription" : "A lightweight HTTP/1.1 server implementation supporting request routing, file operations, and compression with a process-per-connection concurrency model.",
+        "tags": ["C# (.NET 9.0)", "Docker", "PowerShell"],
+        "links": [
+            {
+                "label": "GitHub",
+                "icon": "lucide:github",
+                "link": "https://github.com/Saul-Lara/http-server-csharp"
+            },
+            {
+                "label": "Hashnode Series",
+                "icon": "simple-icons:hashnode",
+                "link": "https://saul-lara.hashnode.dev/series/bit-by-bit-csharp-server"
+            }
+        ]
+    },
+    {
+        "thumbnail": "/images/projectImg/claudeCodeProject.jpg",
+        "projectName": "🤖 Claude Code (JS)",
+        "projectDescription" : "Building a Claude-style coding agent in JavaScript while exploring LLM APIs, tool calling, and agent loops.",
+        "tags": ["JavaScript"],
+        "links": [
+            {
+                "label": "GitHub",
+                "icon": "lucide:github",
+                "link": "https://github.com/Saul-Lara/claude-code-js"
+            },
+            {
+                "label": "Hashnode Series",
+                "icon": "simple-icons:hashnode",
+                "link": "https://saul-lara.hashnode.dev/series/claude-code-from-scratch"
+            }
+        ]
+    },
+    {
+        "thumbnail": "/images/projectImg/lexicalAnalyzerProject.jpg",
+        "projectName": "Lexical Analyzer",
+        "projectDescription" : "A Python-based lexical analyzer with a Tkinter GUI for tokenizing source code, handling syntax errors, and visualizing tokens.",
+        "tags": ["Python", "Pytest"],
+        "links": [
+            {
+                "label": "GitHub",
+                "icon": "lucide:github",
+                "link": "https://github.com/Saul-Lara/Lexical-Analyzer"
+            },
+            {
+                "label": "Hashnode Series",
+                "icon": "simple-icons:hashnode",
+                "link": "https://saul-lara.hashnode.dev/series/lexical-analyzer"
+            }
+        ]
+    }
+]
